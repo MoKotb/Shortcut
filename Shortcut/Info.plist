@@ -41,5 +41,32 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Mountain</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Mountain</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>MountainShort</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Space</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Space</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>SpaceShort</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Mountain</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Ocean</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>OceanShort</string>
+		</dict>
+	</array>
 </dict>
 </plist>

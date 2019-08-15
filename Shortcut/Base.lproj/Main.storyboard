@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WNf-Hs-ImJ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,19 +9,136 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MountainVC-->
+        <!--Mountain-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MountainVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MountainVC" id="BYZ-38-t0r" customClass="MountainVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="sb0-6u-WNc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sb0-6u-WNc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Li-0b-i5i"/>
+                            <constraint firstAttribute="bottom" secondItem="sb0-6u-WNc" secondAttribute="bottom" id="PIG-zJ-4Uq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sb0-6u-WNc" secondAttribute="trailing" id="aMW-QJ-jXt"/>
+                            <constraint firstItem="sb0-6u-WNc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="reu-rm-w1u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Mountain" id="DWT-9b-6wu">
+                        <barButtonItem key="backBarButtonItem" title=" " id="SKJ-Fy-1VR"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YsR-Dv-fyH">
+                            <connections>
+                                <segue destination="6bA-aI-yvt" kind="show" id="Z43-h3-SfJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="871.01449275362324" y="18.75"/>
+        </scene>
+        <!--Space-->
+        <scene sceneID="Zka-Gb-Gb2">
+            <objects>
+                <viewController storyboardIdentifier="SpaceVC" id="6bA-aI-yvt" customClass="SpaceVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uwF-64-6UW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Space" translatesAutoresizingMaskIntoConstraints="NO" id="TOi-0U-O3Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TOi-0U-O3Z" firstAttribute="top" secondItem="vnW-1o-DYL" secondAttribute="top" id="0oD-9W-mKp"/>
+                            <constraint firstItem="TOi-0U-O3Z" firstAttribute="leading" secondItem="vnW-1o-DYL" secondAttribute="leading" id="Pb6-xE-jg3"/>
+                            <constraint firstItem="TOi-0U-O3Z" firstAttribute="trailing" secondItem="vnW-1o-DYL" secondAttribute="trailing" id="bjV-zM-L6i"/>
+                            <constraint firstAttribute="bottom" secondItem="TOi-0U-O3Z" secondAttribute="bottom" id="hq8-jJ-nZr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vnW-1o-DYL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Space" id="n3F-Ew-HV8">
+                        <barButtonItem key="backBarButtonItem" title=" " id="vsi-nf-HOj"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Lea-nw-VSk">
+                            <connections>
+                                <segue destination="HZl-HC-j9S" kind="show" id="V15-az-hUY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlA-nX-ycO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="19"/>
+        </scene>
+        <!--Ocean-->
+        <scene sceneID="GNb-Uu-uY5">
+            <objects>
+                <viewController storyboardIdentifier="OceanVC" id="HZl-HC-j9S" customClass="OceanVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nFa-Dj-akn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ocean" translatesAutoresizingMaskIntoConstraints="NO" id="Uvc-oQ-L4F">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uvc-oQ-L4F" firstAttribute="top" secondItem="kV5-DB-3y6" secondAttribute="top" id="Lig-Mm-hx8"/>
+                            <constraint firstItem="Uvc-oQ-L4F" firstAttribute="trailing" secondItem="kV5-DB-3y6" secondAttribute="trailing" id="Qjl-RE-YxD"/>
+                            <constraint firstAttribute="bottom" secondItem="Uvc-oQ-L4F" secondAttribute="bottom" id="VWv-OE-2sd"/>
+                            <constraint firstItem="Uvc-oQ-L4F" firstAttribute="leading" secondItem="kV5-DB-3y6" secondAttribute="leading" id="YuS-W6-HIU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kV5-DB-3y6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ocean" id="eIW-M2-97P">
+                        <barButtonItem key="backBarButtonItem" title=" " id="jRt-FW-pSy"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWd-rp-edg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628" y="19"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6PX-Yz-uFh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WNf-Hs-ImJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="goj-ZN-0jk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.56470588235294117" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WnJ-6Q-3Tf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRW-Py-OY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="19"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Mountains" width="375" height="667"/>
+        <image name="Ocean" width="375" height="667"/>
+        <image name="Space" width="375" height="667"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.56470588235294117" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
