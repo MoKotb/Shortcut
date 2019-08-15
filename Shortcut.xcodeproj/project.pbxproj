@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D16C8BEC2306072E00E50003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16C8BEB2306072E00E50003 /* AppDelegate.swift */; };
-		D16C8BEE2306072E00E50003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16C8BED2306072E00E50003 /* ViewController.swift */; };
+		D16C8BEE2306072E00E50003 /* MountainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16C8BED2306072E00E50003 /* MountainVC.swift */; };
 		D16C8BF12306072E00E50003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16C8BEF2306072E00E50003 /* Main.storyboard */; };
 		D16C8BF32306073200E50003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16C8BF22306073200E50003 /* Assets.xcassets */; };
 		D16C8BF62306073200E50003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16C8BF42306073200E50003 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		D16C8BE82306072E00E50003 /* Shortcut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shortcut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16C8BEB2306072E00E50003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D16C8BED2306072E00E50003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D16C8BED2306072E00E50003 /* MountainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainVC.swift; sourceTree = "<group>"; };
 		D16C8BF02306072E00E50003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D16C8BF22306073200E50003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D16C8BF52306073200E50003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,22 @@
 		D16C8BEA2306072E00E50003 /* Shortcut */ = {
 			isa = PBXGroup;
 			children = (
+				D16C8BFD2306075500E50003 /* Controller */,
 				D16C8BEB2306072E00E50003 /* AppDelegate.swift */,
-				D16C8BED2306072E00E50003 /* ViewController.swift */,
 				D16C8BEF2306072E00E50003 /* Main.storyboard */,
 				D16C8BF22306073200E50003 /* Assets.xcassets */,
 				D16C8BF42306073200E50003 /* LaunchScreen.storyboard */,
 				D16C8BF72306073200E50003 /* Info.plist */,
 			);
 			path = Shortcut;
+			sourceTree = "<group>";
+		};
+		D16C8BFD2306075500E50003 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D16C8BED2306072E00E50003 /* MountainVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D16C8BEE2306072E00E50003 /* ViewController.swift in Sources */,
+				D16C8BEE2306072E00E50003 /* MountainVC.swift in Sources */,
 				D16C8BEC2306072E00E50003 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KC7AXFA778;
 				INFOPLIST_FILE = Shortcut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kotb.Shortcut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KC7AXFA778;
 				INFOPLIST_FILE = Shortcut/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kotb.Shortcut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
